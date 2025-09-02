@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiv Prasad Tharu - Digital Marketer & Content Creator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* cool gray 50 */
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 8px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #6366f1; /* indigo-500 */
+            border-radius: 2px;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.5);
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">SPT.</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#services" class="text-gray-600 hover:text-indigo-600 transition duration-300">Services</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300">Projects</a>
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-full cta-button">Hire Me</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#services" class="block py-2 text-gray-600 hover:text-indigo-600">Services</a>
+            <a href="#projects" class="block py-2 text-gray-600 hover:text-indigo-600">Projects</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">About</a>
+            <a href="#contact" class="block mt-2 bg-indigo-600 text-white text-center px-4 py-2 rounded-full cta-button">Hire Me</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section text-white py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <img src="https://i.ibb.co/wZM7WpbB/Whats-App-Image-2025-08-28-at-20-07-24.jpg" alt="Shiv Prasad Tharu" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover border-4 border-white shadow-lg mb-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Shiv Prasad Tharu</h1>
+                <p class="text-lg md:text-2xl font-light mb-8 max-w-2xl mx-auto">Digital Marketer, Content Creator & Graphic Designer</p>
+                <div class="flex justify-center items-center space-x-4">
+                    <a href="mailto:contact@shivprasad.com" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold cta-button">Get In Touch</a>
+                    <a href="#projects" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold cta-button">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12 section-title">What I Do</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center card-hover">
+                        <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Digital Marketing</h3>
+                        <p class="text-gray-600">I specialize in crafting powerful digital marketing strategies that elevate brands and drive real growth. By combining creativity with data-driven insights, I design campaigns that not only capture attention but also deliver measurable results. From SEO and social media management to ad boosting and targeted promotions across Facebook, Instagram, and Google, my goal is to connect businesses with the right audience at the right time. Every strategy I create is tailored to build visibility, strengthen engagement, and turn online presence into lasting success.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center card-hover">
+                       <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Ad Campaign Boosting</h3>
+                        <p class="text-gray-600">I craft visually compelling advertisements that do more than just catch the eye—they tell a story and drive meaningful action. From creative ad design to precision targeting and strategic boosting across platforms like Facebook, Instagram, and Google, every campaign is thoughtfully planned to maximize reach and impact. By blending artistry with analytics, I ensure each ad resonates with the right audience, sparks engagement, and generates measurable results. With continuous optimization and a focus on delivering real value, I transform every campaign into a powerful growth engine that elevates brands and drives success.</p>
+                    </div>
+                     <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center card-hover">
+                         <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Social Media Management</h3>
+                        <p class="text-gray-600">I specialize in managing and growing social media platforms to help brands and individuals connect with their audience effectively. From content planning and creative post design to scheduling, engagement, and analytics, I handle every aspect of social media management with precision and strategy. My approach focuses on building strong brand identity, fostering meaningful interactions, and driving measurable results across platforms like Facebook, Instagram, and LinkedIn. By combining creativity, consistency, and data-driven insights, I ensure every campaign resonates with the audience, strengthens relationships, and amplifies online presence.</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center card-hover">
+                       <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Graphic Designing</h3>
+                        <p class="text-gray-600">I specialize in crafting visually captivating designs that not only appeal to the eye but also communicate a brand's essence with clarity and impact. From social media graphics, banners, and logos to complete brand identities, each creation is thoughtfully designed to merge creativity with purpose, ensuring every visual resonates with its intended audience. By combining artistic vision, strategic thinking, and meticulous attention to detail, I transform ideas into compelling visuals that enhance brand recognition, drive engagement, and leave a lasting impression. Every design I create is more than just art—it's a carefully crafted story that reflects your brand's personality and vision in the digital space.</p>
+                    </div>
+                    <!-- Service Card 5 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center card-hover">
+                        <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Affiliate Marketing</h3>
+                        <p class="text-gray-600">Affiliate marketing, for me, is about building smart partnerships that create value for everyone involved. I specialize in promoting products and services through strategic content, targeted campaigns, and trusted platforms that connect audiences with what they truly need. My focus is not only on driving sales but also on building credibility and long-term customer relationships through authentic promotion. By blending creativity with data-driven insights, I design affiliate strategies that maximize reach, enhance visibility, and generate consistent income streams. With the right mix of content, placement, and audience targeting, I ensure every campaign delivers measurable results and sustainable growth.</p>
+                    </div>
+                    <!-- Service Card 6 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center card-hover">
+                        <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Email Marketing</h3>
+                        <p class="text-gray-600">I craft strategic, engaging, and results-driven email campaigns designed to connect with audiences, nurture relationships, and drive meaningful action. From personalized newsletters and promotional emails to automated drip campaigns, each message is thoughtfully designed to reflect your brand's voice and resonate with recipients. By combining compelling copy, eye-catching design, and data-driven insights, I ensure every email not only captures attention but also inspires clicks, conversions, and long-term engagement. My goal is to turn every inbox into an opportunity—building trust, loyalty, and measurable growth for your brand.</p>
+                    </div>
+                    <!-- Service Card 7 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center card-hover">
+                        <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Blogging</h3>
+                        <p class="text-gray-600">To me, blogging is the art of turning ideas into meaningful conversations. It goes far beyond writing—it's about creating valuable, engaging, and search-friendly content that educates, inspires, and connects with the right audience. I craft blogs that are not only well-researched and SEO-optimized but also written with clarity and creativity to reflect a brand's unique voice. Whether it's building authority for businesses, driving organic traffic, or sharing insightful perspectives that resonate globally, my blogging approach is designed to inform, influence, and inspire action. Each post is a blend of storytelling, strategy, and passion—making every word count in the digital space.</p>
+                    </div>
+                    <!-- Service Card 8 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center card-hover">
+                        <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="21" x2="22" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Online Services</h3>
+                        <p class="text-gray-600">I offer a comprehensive suite of trusted online services designed to simplify and streamline digital processes for both individuals and organizations. Whether it's form submissions on government portals like Loksewa Aayog and Teachers Services Commission, DV forms, PAN card applications, police clearance forms, or setting up social media accounts and designing custom online forms for surveys and data collection, I handle every task with precision, care, and efficiency. My approach emphasizes accuracy, reliability, and timeliness, ensuring that each service is executed seamlessly and tailored to meet specific requirements. By providing professional support for a variety of digital needs, I aim to make online tasks effortless, accessible, and stress-free, delivering solutions that clients can depend on locally and globally.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Working Process Section -->
+        <section id="process" class="bg-white py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-16 section-title">My Working Process</h2>
+                <div class="relative">
+                    <!-- Dotted line connecting the steps -->
+                    <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-indigo-200"></div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
+                        <!-- Step 1 -->
+                        <div class="text-center flex flex-col items-center card-hover p-4 rounded-lg">
+                            <div class="relative z-10 mx-auto w-24 h-24 flex items-center justify-center bg-white border-4 border-indigo-500 rounded-full shadow-lg mb-4">
+                                <div class="w-20 h-20 flex items-center justify-center bg-indigo-500 text-white rounded-full">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">01. Discovery</h3>
+                            <p class="text-gray-600">We start by understanding your brand, audience, and goals to build a solid foundation.</p>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="text-center flex flex-col items-center card-hover p-4 rounded-lg">
+                             <div class="relative z-10 mx-auto w-24 h-24 flex items-center justify-center bg-white border-4 border-indigo-500 rounded-full shadow-lg mb-4">
+                                <div class="w-20 h-20 flex items-center justify-center bg-indigo-500 text-white rounded-full">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">02. Strategy</h3>
+                            <p class="text-gray-600">Next, we craft a data-driven strategy and a clear roadmap tailored to your specific needs.</p>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="text-center flex flex-col items-center card-hover p-4 rounded-lg">
+                             <div class="relative z-10 mx-auto w-24 h-24 flex items-center justify-center bg-white border-4 border-indigo-500 rounded-full shadow-lg mb-4">
+                                <div class="w-20 h-20 flex items-center justify-center bg-indigo-500 text-white rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/> </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">03. Execution</h3>
+                            <p class="text-gray-600">This is where the magic happens. We launch campaigns, create content, and engage your audience.</p>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="text-center flex flex-col items-center card-hover p-4 rounded-lg">
+                             <div class="relative z-10 mx-auto w-24 h-24 flex items-center justify-center bg-white border-4 border-indigo-500 rounded-full shadow-lg mb-4">
+                                <div class="w-20 h-20 flex items-center justify-center bg-indigo-500 text-white rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><path d="M12 20V10M18 20V4M6 20V16"></path></svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">04. Analysis</h3>
+                            <p class="text-gray-600">We constantly monitor results, analyze data, and optimize our strategy for maximum impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools & Technologies Section -->
+        <section class="bg-gray-100 py-20">
+             <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12 section-title">Tools & Technologies</h2>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                    <div class="flex flex-col items-center text-center p-4 transition-transform duration-300 hover:scale-110">
+                        <img src="https://placehold.co/80x80/E9D5FF/6B21A8?text=Canva" class="h-16 w-16 mb-2 rounded-full" alt="Canva">
+                        <p class="font-semibold">Canva</p>
+                    </div>
+                     <div class="flex flex-col items-center text-center p-4 transition-transform duration-300 hover:scale-110">
+                        <img src="https://placehold.co/80x80/D1D5DB/1F2937?text=Ps" class="h-16 w-16 mb-2 rounded-full" alt="Photoshop">
+                        <p class="font-semibold">Photoshop</p>
+                    </div>
+                     <div class="flex flex-col items-center text-center p-4 transition-transform duration-300 hover:scale-110">
+                        <img src="https://placehold.co/80x80/FEE2E2/991B1B?text=Ai" class="h-16 w-16 mb-2 rounded-full" alt="Illustrator">
+                        <p class="font-semibold">Illustrator</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-4 transition-transform duration-300 hover:scale-110">
+                        <img src="https://placehold.co/80x80/DBEAFE/1E40AF?text=Meta" class="h-16 w-16 mb-2 rounded-full" alt="Meta Ads Manager">
+                        <p class="font-semibold">Meta Ads</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-4 transition-transform duration-300 hover:scale-110">
+                        <img src="https://placehold.co/80x80/E0F2FE/0891B2?text=WP" class="h-16 w-16 mb-2 rounded-full" alt="WordPress">
+                        <p class="font-semibold">WordPress</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-4 transition-transform duration-300 hover:scale-110">
+                        <img src="https://placehold.co/80x80/D1FAE5/065F46?text=Capcut" class="h-16 w-16 mb-2 rounded-full" alt="Capcut">
+                        <p class="font-semibold">Capcut</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12 section-title">My Work & Case Studies</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                        <img src="https://placehold.co/600x400/a78bfa/ffffff?text=Campaign+Mockup" alt="Project 1" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Social Media Campaign</h3>
+                            <p class="text-gray-600 mb-4">A successful ad campaign for an e-commerce brand, increasing engagement by 200%.</p>
+                            <a href="#" class="font-semibold text-indigo-600 hover:underline">View Case Study →</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                        <img src="https://placehold.co/600x400/7dd3fc/ffffff?text=Blog+Design" alt="Project 2" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Content & Blog Creation</h3>
+                            <p class="text-gray-600 mb-4">Developed a content strategy and blog that boosted organic traffic by 80% in 6 months.</p>
+                            <a href="#" class="font-semibold text-indigo-600 hover:underline">Read More →</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                        <img src="https://placehold.co/600x400/fca5a5/ffffff?text=Ad+Visuals" alt="Project 3" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Graphic Design for Ads</h3>
+                            <p class="text-gray-600 mb-4">Designed a set of compelling visuals for a Google Ads campaign, achieving a high click-through-rate.</p>
+                            <a href="#" class="font-semibold text-indigo-600 hover:underline">See Designs →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="bg-white py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3">
+                        <img src="https://i.ibb.co/wZM7WpbB/Whats-App-Image-2025-08-28-at-20-07-24.jpg" alt="Shiv Prasad Tharu" class="rounded-lg shadow-2xl w-full">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h2 class="text-4xl font-bold mb-4 section-title !text-left !pl-0 !ml-0" style="left: 40px;">About Me</h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                           I am a passionate digital creator driven by the vision of helping people and businesses thrive in the online world. With expertise in digital marketing, blogging, affiliate marketing, advertisement design, and ad boosting across Facebook, Instagram, and Google, I craft strategies that deliver real impact. My skills extend to social media marketing and management, graphic designing (logos, branding, and creative social media posts), and email marketing, ensuring every project I take on is both visually compelling and results-oriented.
+                        </p>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                           Alongside creative digital solutions, I also provide essential online services such as form filling for government and non-government applications, and custom online form designing for surveys and organizational data collection. What sets me apart is not just my skillset but my unwavering passion, reliability, and dedication to delivering the very best—locally and globally. For me, this isn't just work; it's what I love, and I put that love into every project I create.
+                        </p>
+                        <a href="#contact" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold cta-button">Let's Work Together</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Signup -->
+        <section class="bg-indigo-700 text-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-2">Join My Newsletter</h2>
+                <p class="mb-6">Get insights on digital marketing, content creation, and more, delivered to your inbox.</p>
+                <form class="max-w-md mx-auto">
+                    <div class="flex items-center">
+                        <input type="email" placeholder="Your email address" class="w-full px-4 py-3 rounded-l-full text-gray-800 focus:outline-none" required>
+                        <button type="submit" class="bg-gray-800 text-white px-6 py-3 rounded-r-full font-semibold hover:bg-gray-700 transition duration-300">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-4 section-title">Ready to build something amazing?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+                    Have a project in mind or just want to say hello? I'd love to hear from you.
+                    Send me an email and let's bring your ideas to life!
+                </p>
+                <a href="mailto:contact@shivprasad.com" class="bg-indigo-600 text-white px-10 py-4 rounded-full font-bold text-lg cta-button">
+                    contact@shivprasad.com
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.instagram.com/shiv_prasad_tharu/" target="_blank" class="hover:text-indigo-400 transition duration-300">Instagram</a>
+                <a href="https://x.com/shibu5799" target="_blank" class="hover:text-indigo-400 transition duration-300">X (Twitter)</a>
+                <a href="https://www.linkedin.com/in/shiv-prasad-tharu-8a7981351/" target="_blank" class="hover:text-indigo-400 transition duration-300">LinkedIn</a>
+                <a href="#" class="hover:text-indigo-400 transition duration-300">TikTok</a>
+            </div>
+            <p>© 2025 Shiv Prasad Tharu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
